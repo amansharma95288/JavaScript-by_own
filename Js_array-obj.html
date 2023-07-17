@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <h1>here we'll see the different way to initialize the array </h1>
+</body>
+<script>
+    var arr=['aman','komal','pooja']           // one methods (array literals)
+    document.write("<h2>"+"the name of 3 friends are :"+"</h2>"+"<h2>"+arr+"</h2>")
+    document.write("<h3>"+"Another method:"+"</h3>")
+    for(i=0;i<4;i++){
+        document.write("<h2>"+arr[i]+"</h2>")
+    }
+
+    var aman= new Array('a','b','c');         // 2nd method (new keyword)
+    for(i=0;i<aman.length;i++){
+        document.write(aman[i]+"<br>")
+    }
+
+    // if we want to append some value at the end 
+    
+    aman.push('pagal')
+    document.write("the updated array is :"+ aman+"<br>")
+    aman[2]='poojuli'
+    document.write("the updated array is :"+ aman)
+
+    
+</script>
+</html>

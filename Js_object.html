@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obj</title>
+</head>
+<body>
+</body>
+<script>
+var aman={'name':'Aman sharma','age':19,'address':"haldwani"}
+document.write(aman)       //this will only print object object...
+document.write("<h1>"+"here we'll use the concept of for-in loop"+"</h1>")
+document.write("<h2>"+"this is using literals method"+"</h2>")
+for(const key in aman){
+    document.write(key+" : ")
+    document.write(aman[key]+"<br>")
+}
+document.write("<h2>"+"now if we want to perform certain operations"+"</h2>")
+aman.address="Amritpur"
+aman.age=20
+for(const key in aman){
+    document.write(key+" : ")
+    document.write(aman[key]+"<br>")
+}
+document.write("<h2>"+"now this is using object concept or using new keyword"+"</h2>")
+var komal=new Object()
+komal.name="komal bargali"
+komal.age=19
+komal.add="new ITI(pura address nhi batati hai yee)"
+for(const key in komal){
+    document.write(key+" : ")
+    document.write(komal[key]+"<br>")
+}
+</script>
+</html>

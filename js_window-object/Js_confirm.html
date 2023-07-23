@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm</title>
+</head>
+<body>
+    <h1>hey, Aman this side</h1>
+    <button onclick="done()">submit</button>
+</body>
+<script>
+ function done(){
+    var a =confirm("are you sure want to change your name")
+    if(a==true){
+        document.getElementsByTagName('h1')[0].innerText="Aman sharma";
+    }
+    else{
+        document.getElementsByTagName('h1')[0].innerText="Komal Bargali";
+    }
+}
+</script>
+</html>
